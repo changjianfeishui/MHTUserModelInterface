@@ -1,0 +1,6 @@
+framework module Pods_MHTUserModelInterface_Example {
+  umbrella header "Pods-MHTUserModelInterface_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

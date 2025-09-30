@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		53B2395A98BE146B78FF1513 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		53B2395A98BE146B78FF1513 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MHTUserModelInterface_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHTUserModelInterface_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,10 +63,10 @@
 		7D4A6E13A1F775BD1DB362BA /* Pods_MHTUserModelInterface_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHTUserModelInterface_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9236355A6EACC049EACE9E21 /* Pods-MHTUserModelInterface_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHTUserModelInterface_Example.release.xcconfig"; path = "Target Support Files/Pods-MHTUserModelInterface_Example/Pods-MHTUserModelInterface_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9381796AB5D5CAB46B4EFC77 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9381796AB5D5CAB46B4EFC77 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BA702F1DB5E4603E6C631A27 /* Pods-MHTUserModelInterface_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHTUserModelInterface_Example.debug.xcconfig"; path = "Target Support Files/Pods-MHTUserModelInterface_Example/Pods-MHTUserModelInterface_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E5CF2CA597655F854CEC5C20 /* Pods-MHTUserModelInterface_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHTUserModelInterface_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MHTUserModelInterface_Tests/Pods-MHTUserModelInterface_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FD0CAA1CA4367B818F306EA5 /* MHTUserModelInterface.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MHTUserModelInterface.podspec; path = ../MHTUserModelInterface.podspec; sourceTree = "<group>"; };
+		FD0CAA1CA4367B818F306EA5 /* MHTUserModelInterface.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MHTUserModelInterface.podspec; path = ../MHTUserModelInterface.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				E5CF2CA597655F854CEC5C20 /* Pods-MHTUserModelInterface_Tests.debug.xcconfig */,
 				67C35C1DFAD03471EBDA9B5C /* Pods-MHTUserModelInterface_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = changjianfeishui;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = QVAXX52633;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +305,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MHTUserModelInterface_Example/Pods-MHTUserModelInterface_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MHTRouter/MHTRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/MHTUserInfo/MHTUserInfo.framework",
 				"${BUILT_PRODUCTS_DIR}/MHTUserModelInterface/MHTUserModelInterface.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MHTRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MHTUserInfo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MHTUserModelInterface.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,6 +503,7 @@
 			baseConfigurationReference = BA702F1DB5E4603E6C631A27 /* Pods-MHTUserModelInterface_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QVAXX52633;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MHTUserModelInterface/MHTUserModelInterface-Prefix.pch";
 				INFOPLIST_FILE = "MHTUserModelInterface/MHTUserModelInterface-Info.plist";
@@ -510,6 +520,7 @@
 			baseConfigurationReference = 9236355A6EACC049EACE9E21 /* Pods-MHTUserModelInterface_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QVAXX52633;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MHTUserModelInterface/MHTUserModelInterface-Prefix.pch";
 				INFOPLIST_FILE = "MHTUserModelInterface/MHTUserModelInterface-Info.plist";
