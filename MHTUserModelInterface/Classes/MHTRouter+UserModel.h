@@ -5,7 +5,7 @@
 //  Created by mangox on 2025/9/28.
 //
 
-#import "MHTRouter.h"
+#import <MHTRouter/MHTRouter.h>
 #import <MHTUserInfo/MHTUserInfo.h>
 
 NS_ASSUME_NONNULL_BEGIN

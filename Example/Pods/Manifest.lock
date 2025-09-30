@@ -2,7 +2,7 @@ PODS:
   - MHTRouter (0.1.0)
   - MHTUserInfo (0.1.2):
     - YYModel
-  - MHTUserModelInterface (0.1.0):
+  - MHTUserModelInterface (0.1.1):
     - MHTRouter
     - MHTUserInfo
   - YYModel (1.0.4)
@@ -24,9 +24,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   MHTRouter: f848a0499296a116b466c8e10037c9d502e14753
   MHTUserInfo: 2eae1d51a2efae99f2256412c03f04d4bd727566
-  MHTUserModelInterface: 9da2c48059003a15235645dcb6f2e4f843a78758
+  MHTUserModelInterface: 05923bb1d0d5406f3a1f7f4866b126bb240fb44f
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: bad18cd2ae641ed5b58c2aa626d2b2915d31e18b
+PODFILE CHECKSUM: 1df0996a2e08d833e410c1665e6421efed3f973e
 
 COCOAPODS: 1.16.2
