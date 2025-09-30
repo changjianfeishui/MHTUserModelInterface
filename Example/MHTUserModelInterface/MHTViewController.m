@@ -7,7 +7,7 @@
 //
 
 #import "MHTViewController.h"
-
+#import <YYModel.h>
 @interface MHTViewController ()
 
 @end

@@ -6,7 +6,8 @@
 //
 
 #import "MHTRouter.h"
-#import "MHTUserInfo.h"
+#import <MHTUserInfo/MHTUserInfo.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MHTRouter (UserModel)
